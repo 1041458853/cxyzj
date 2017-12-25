@@ -91,7 +91,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">文章作者的用户名</td>
 </tr>
 <tr>
-	<td align="left" valign="top"><p class="normal">article_title</td>
+	<td align="left" valign="top"><p class="normal">title</td>
 	<td align="left" valign="top"><p class="normal">varchar(50)</td>
 	<td align="left" valign="top"><p class="normal">utf8_general_ci</td>
 	<td align="left" valign="top"><p class="normal">NO</td>
@@ -465,7 +465,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">发出评论的用户名</td>
 </tr>
 <tr>
-	<td align="left" valign="top"><p class="normal">comment</td>
+	<td align="left" valign="top"><p class="normal">text</td>
 	<td align="left" valign="top"><p class="normal">text</td>
 	<td align="left" valign="top"><p class="normal">utf8_general_ci</td>
 	<td align="left" valign="top"><p class="normal">NO</td>
@@ -2267,17 +2267,6 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">标题</td>
 </tr>
 <tr>
-	<td align="left" valign="top"><p class="normal">summary</td>
-	<td align="left" valign="top"><p class="normal">varchar(45)</td>
-	<td align="left" valign="top"><p class="normal">utf8_general_ci</td>
-	<td align="left" valign="top"><p class="normal">YES</td>
-	<td align="left" valign="top"><p class="normal">&nbsp;</td>
-	<td align="left" valign="top"><p class="normal">(NULL)</td>
-	<td align="left" valign="top"><p class="normal">&nbsp;</td>
-	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
-	<td align="left" valign="top"><p class="normal">摘要</td>
-</tr>
-<tr>
 	<td align="left" valign="top"><p class="normal">seq</td>
 	<td align="left" valign="top"><p class="normal">int(11)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
@@ -2322,7 +2311,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">创建日期</td>
 </tr>
 <tr>
-	<td align="left" valign="top"><p class="normal">last_time</td>
+	<td align="left" valign="top"><p class="normal">update_time</td>
 	<td align="left" valign="top"><p class="normal">timestamp</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">YES</td>
@@ -2353,6 +2342,17 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
 	<td align="left" valign="top"><p class="normal">浏览量</td>
+</tr>
+<tr>
+	<td align="left" valign="top"><p class="normal">summary</td>
+	<td align="left" valign="top"><p class="normal">varchar(50)</td>
+	<td align="left" valign="top"><p class="normal">utf8_general_ci</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">(NULL)</td>
+	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">select,insert,update,references</td>
+	<td align="left" valign="top"><p class="normal">摘要</td>
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">content_url</td>
@@ -2677,7 +2677,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">二维码表主键</td>
 </tr>
 <tr>
-	<td align="left" valign="top"><p class="normal">qr_img_url</td>
+	<td align="left" valign="top"><p class="normal">qr_code_url</td>
 	<td align="left" valign="top"><p class="normal">varchar(200)</td>
 	<td align="left" valign="top"><p class="normal">utf8_general_ci</td>
 	<td align="left" valign="top"><p class="normal">YES</td>
