@@ -81,7 +81,7 @@ BR.page {page-break-after: always}
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">user_id</td>
-	<td align="left" valign="top"><p class="normal">int(11)</td>
+	<td align="left" valign="top"><p class="normal">int(10) unsigned</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">NO</td>
 	<td align="left" valign="top"><p class="normal">MUL</td>
@@ -94,7 +94,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">title</td>
 	<td align="left" valign="top"><p class="normal">varchar(50)</td>
 	<td align="left" valign="top"><p class="normal">utf8_general_ci</td>
-	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -105,7 +105,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">create_time</td>
 	<td align="left" valign="top"><p class="normal">timestamp</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
-	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -116,7 +116,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">update_time</td>
 	<td align="left" valign="top"><p class="normal">timestamp</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
-	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -127,7 +127,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">article_sum</td>
 	<td align="left" valign="top"><p class="normal">text</td>
 	<td align="left" valign="top"><p class="normal">utf8_general_ci</td>
-	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -139,7 +139,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">type_id</td>
 	<td align="left" valign="top"><p class="normal">int(11)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
-	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -446,7 +446,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">article_id</td>
 	<td align="left" valign="top"><p class="normal">int(10) unsigned</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
-	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">MUL</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -457,7 +457,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">discusser</td>
 	<td align="left" valign="top"><p class="normal">varchar(25)</td>
 	<td align="left" valign="top"><p class="normal">utf8_general_ci</td>
-	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -468,7 +468,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">text</td>
 	<td align="left" valign="top"><p class="normal">text</td>
 	<td align="left" valign="top"><p class="normal">utf8_general_ci</td>
-	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -479,7 +479,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">create_time</td>
 	<td align="left" valign="top"><p class="normal">timestamp</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
-	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -535,7 +535,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">0</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
-	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -605,9 +605,9 @@ BR.page {page-break-after: always}
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">user_id</td>
-	<td align="left" valign="top"><p class="normal">int(11)</td>
+	<td align="left" valign="top"><p class="normal">int(10) unsigned</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
-	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">MUL</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -618,7 +618,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">title</td>
 	<td align="left" valign="top"><p class="normal">varchar(50)</td>
 	<td align="left" valign="top"><p class="normal">utf8_general_ci</td>
-	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -630,7 +630,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">create_time</td>
 	<td align="left" valign="top"><p class="normal">timestamp</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
-	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -641,7 +641,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">update_time</td>
 	<td align="left" valign="top"><p class="normal">timestamp</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
-	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -719,7 +719,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">0</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
-	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -791,7 +791,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">article_comment_id</td>
 	<td align="left" valign="top"><p class="normal">int(10) unsigned</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
-	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">MUL</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -802,7 +802,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">replier</td>
 	<td align="left" valign="top"><p class="normal">int(11)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
-	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -813,7 +813,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">user_id</td>
 	<td align="left" valign="top"><p class="normal">int(11)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
-	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -824,7 +824,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">re_time</td>
 	<td align="left" valign="top"><p class="normal">timestamp</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
-	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -835,7 +835,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">text</td>
 	<td align="left" valign="top"><p class="normal">text</td>
 	<td align="left" valign="top"><p class="normal">utf8_general_ci</td>
-	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -891,7 +891,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">0</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
-	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -1228,9 +1228,9 @@ BR.page {page-break-after: always}
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">follower</td>
-	<td align="left" valign="top"><p class="normal">int(11)</td>
+	<td align="left" valign="top"><p class="normal">int(10) unsigned</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
-	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">MUL</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -1239,9 +1239,9 @@ BR.page {page-break-after: always}
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">user_id</td>
-	<td align="left" valign="top"><p class="normal">int(11)</td>
+	<td align="left" valign="top"><p class="normal">int(10) unsigned</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
-	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">MUL</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -1297,7 +1297,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">0</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
-	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -1312,7 +1312,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">0</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
-	<td align="left" valign="top"><p class="normal">&nbsp;</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">BTREE</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -1763,7 +1763,7 @@ BR.page {page-break-after: always}
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">course_id</td>
-	<td align="left" valign="top"><p class="normal">int(11)</td>
+	<td align="left" valign="top"><p class="normal">int(10) unsigned</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">NO</td>
 	<td align="left" valign="top"><p class="normal">MUL</td>
@@ -1774,7 +1774,7 @@ BR.page {page-break-after: always}
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">user_id</td>
-	<td align="left" valign="top"><p class="normal">int(11)</td>
+	<td align="left" valign="top"><p class="normal">int(10) unsigned</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">NO</td>
 	<td align="left" valign="top"><p class="normal">MUL</td>
@@ -1847,9 +1847,9 @@ BR.page {page-break-after: always}
 <tr>
 	<td align="left" valign="top"><p class="normal">course_comment</td>
 	<td align="left" valign="top"><p class="normal">1</td>
-	<td align="left" valign="top"><p class="normal">fk_comment_course_info1_idx</td>
+	<td align="left" valign="top"><p class="normal">fk_comment_user1_idx</td>
 	<td align="left" valign="top"><p class="normal">1</td>
-	<td align="left" valign="top"><p class="normal">course_id</td>
+	<td align="left" valign="top"><p class="normal">user_id</td>
 	<td align="left" valign="top"><p class="normal">A</td>
 	<td align="left" valign="top"><p class="normal">0</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
@@ -1862,9 +1862,9 @@ BR.page {page-break-after: always}
 <tr>
 	<td align="left" valign="top"><p class="normal">course_comment</td>
 	<td align="left" valign="top"><p class="normal">1</td>
-	<td align="left" valign="top"><p class="normal">fk_comment_user1_idx</td>
+	<td align="left" valign="top"><p class="normal">fk_comment_course_info1_idx</td>
 	<td align="left" valign="top"><p class="normal">1</td>
-	<td align="left" valign="top"><p class="normal">user_id</td>
+	<td align="left" valign="top"><p class="normal">course_id</td>
 	<td align="left" valign="top"><p class="normal">A</td>
 	<td align="left" valign="top"><p class="normal">0</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
@@ -2107,7 +2107,7 @@ BR.page {page-break-after: always}
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">author_id</td>
-	<td align="left" valign="top"><p class="normal">int(11)</td>
+	<td align="left" valign="top"><p class="normal">int(10) unsigned</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">NO</td>
 	<td align="left" valign="top"><p class="normal">MUL</td>
@@ -2246,7 +2246,7 @@ BR.page {page-break-after: always}
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">course_id</td>
-	<td align="left" valign="top"><p class="normal">int(11)</td>
+	<td align="left" valign="top"><p class="normal">int(10) unsigned</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">NO</td>
 	<td align="left" valign="top"><p class="normal">PRI</td>
@@ -2279,7 +2279,7 @@ BR.page {page-break-after: always}
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">author_id</td>
-	<td align="left" valign="top"><p class="normal">int(11)</td>
+	<td align="left" valign="top"><p class="normal">int(10) unsigned</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">NO</td>
 	<td align="left" valign="top"><p class="normal">MUL</td>
@@ -2418,9 +2418,9 @@ BR.page {page-break-after: always}
 <tr>
 	<td align="left" valign="top"><p class="normal">course_info</td>
 	<td align="left" valign="top"><p class="normal">1</td>
-	<td align="left" valign="top"><p class="normal">fk_course_info_course_collection1_idx</td>
+	<td align="left" valign="top"><p class="normal">fk_course_info_user1_idx</td>
 	<td align="left" valign="top"><p class="normal">1</td>
-	<td align="left" valign="top"><p class="normal">course_collection_id</td>
+	<td align="left" valign="top"><p class="normal">author_id</td>
 	<td align="left" valign="top"><p class="normal">A</td>
 	<td align="left" valign="top"><p class="normal">0</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
@@ -2433,9 +2433,9 @@ BR.page {page-break-after: always}
 <tr>
 	<td align="left" valign="top"><p class="normal">course_info</td>
 	<td align="left" valign="top"><p class="normal">1</td>
-	<td align="left" valign="top"><p class="normal">fk_course_info_user1_idx</td>
+	<td align="left" valign="top"><p class="normal">fk_course_info_course_collection1_idx</td>
 	<td align="left" valign="top"><p class="normal">1</td>
-	<td align="left" valign="top"><p class="normal">author_id</td>
+	<td align="left" valign="top"><p class="normal">course_collection_id</td>
 	<td align="left" valign="top"><p class="normal">A</td>
 	<td align="left" valign="top"><p class="normal">0</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
@@ -2779,7 +2779,7 @@ BR.page {page-break-after: always}
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">course_id</td>
-	<td align="left" valign="top"><p class="normal">int(11)</td>
+	<td align="left" valign="top"><p class="normal">int(10) unsigned</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">NO</td>
 	<td align="left" valign="top"><p class="normal">PRI</td>
@@ -3015,7 +3015,7 @@ BR.page {page-break-after: always}
 </tr>
 <tr>
 	<td align="left" valign="top"><p class="normal">user_id</td>
-	<td align="left" valign="top"><p class="normal">int(11)</td>
+	<td align="left" valign="top"><p class="normal">int(10) unsigned</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">NO</td>
 	<td align="left" valign="top"><p class="normal">PRI</td>
@@ -3028,7 +3028,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">password</td>
 	<td align="left" valign="top"><p class="normal">varchar(25)</td>
 	<td align="left" valign="top"><p class="normal">utf8_general_ci</td>
-	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -3069,10 +3069,10 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">性别</td>
 </tr>
 <tr>
-	<td align="left" valign="top"><p class="normal">e_mail</td>
+	<td align="left" valign="top"><p class="normal">email</td>
 	<td align="left" valign="top"><p class="normal">varchar(45)</td>
 	<td align="left" valign="top"><p class="normal">utf8_general_ci</td>
-	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -3083,7 +3083,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">head_url</td>
 	<td align="left" valign="top"><p class="normal">varchar(200)</td>
 	<td align="left" valign="top"><p class="normal">utf8_general_ci</td>
-	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -3094,7 +3094,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">bg_url</td>
 	<td align="left" valign="top"><p class="normal">varchar(200)</td>
 	<td align="left" valign="top"><p class="normal">utf8_general_ci</td>
-	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
@@ -3117,7 +3117,7 @@ BR.page {page-break-after: always}
 	<td align="left" valign="top"><p class="normal">regist_date</td>
 	<td align="left" valign="top"><p class="normal">timestamp</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
-	<td align="left" valign="top"><p class="normal">NO</td>
+	<td align="left" valign="top"><p class="normal">YES</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
 	<td align="left" valign="top"><p class="normal">(NULL)</td>
 	<td align="left" valign="top"><p class="normal">&nbsp;</td>
