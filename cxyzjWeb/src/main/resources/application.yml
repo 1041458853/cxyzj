@@ -1,0 +1,43 @@
+spring:
+    datasource:  
+#        name: cxyzjdb
+#        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:mysql://127.0.0.1:3306/mydb?useUnicode=true&characterEncoding=utf-8&useSSL=true
+        username: root  
+        password:
+        driver-class-name: com.mysql.jdbc.Driver
+#        minIdle: 5
+#        maxActive: 100
+#        initialSize: 10
+#        maxWait: 60000
+#        timeBetweenEvictionRunsMillis: 60000
+#        minEvictableIdleTimeMillis: 300000
+#        validationQuery: select 'x'
+#        testWhileIdle: true
+#        testOnBorrow: false
+#        testOnReturn: false
+#        poolPreparedStatements: true
+#        maxPoolPreparedStatementPerConnectionSize: 50
+#        removeAbandoned: true
+#        filters: stat
+#        cachePrepStmts: true  # 开启二级缓存
+
+    redis:
+        database:  0
+        host:  127.0.0.1
+        port:  6379
+        password:
+        pool:
+           max-active: 8
+           max-wait: -1
+           max-idle: 8
+           min-idle: 0
+        timeout: 0
+
+mybatis:
+  type-aliases-package: com.cxyzj.frame.domain
+  configuration:
+    cache-enabled: true
+logging:
+  config: classpath:logback-boot.xml           #配置文件的路径
+  path: log                  #配置输出的日志文件的位置
