@@ -29,8 +29,6 @@ public class UserController {
     Map<String,Object> register(@RequestParam String nickname,@RequestParam String email,@RequestParam String password){
 
         Map<String,Object> map = userService.userRegist(nickname,email,password);
-
-        System.out.println(map);
         return map;
     }
 
