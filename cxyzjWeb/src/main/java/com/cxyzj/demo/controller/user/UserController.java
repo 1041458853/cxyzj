@@ -34,5 +34,17 @@ public class UserController {
         return map;
     }
 
+    /**
+     * 张为毅
+     * @param email
+     * @param password
+     * @return
+     */
+    @PostMapping(value =  "/login",produces = "application/json;charset=UTF-8")
+    Map<String,Object> login(@RequestParam String email,@RequestParam String password){
+
+        Map<String,Object> map = userService.userLogin(email,password);
+        return map;
+    }
 
 }

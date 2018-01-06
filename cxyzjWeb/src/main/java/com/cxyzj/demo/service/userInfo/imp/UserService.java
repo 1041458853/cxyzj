@@ -60,10 +60,45 @@ public class UserService implements UserServiceInterface {
     @Override
     /*
     *
-    * 在这里署名
+    * 张为毅
     *
     * */
     public Map<String, Object> userLogin(String email, String password) {
-        return null;
+        Map<String, Object> map = new HashMap<String, Object>();                           //用于返回的map
+        if (userMapper.isExist(email) == 0) {       //判断邮箱是否存在
+            map.put("status", "1");
+            statusInfo.setMessage("邮箱不存在!");
+            map.put("statusInfo", statusInfo.getMessage());
+            return map;
+        } else if (userMapper.login_email(email,password) == null) {  //密码是否正确
+            map.put("status", "1");
+            statusInfo.setMessage("密码有误！");
+            map.put("statusInfo", statusInfo.getMessage());
+            return map;
+        }
+
+
+        //user对象
+        Map<String,Object> user =new HashMap<String, Object>();
+        user.put("user_id",userMapper.login_user_id(email, password));
+        user.put("nickname",userMapper.login_nickname(email, password));
+        user.put("head_url",userMapper.login_head_url(email, password));
+        user.put("is_admin",userMapper.login_is_admin(email, password));
+        user.put("email",userMapper.login_email(email, password));
+        user.put("introduce",userMapper.login_introduce(email, password));
+        user.put("gender",userMapper.login_gender(email, password));
+        user.put("bg_url",userMapper.login_bg_url(email, password));
+
+
+        //data 对象
+        Map<String, Object> data = new HashMap<String, Object>();
+        //data.put("access_token", userMapper.login_access_token(email, password));     //这个列还没有做好  随意返回值
+        data.put("access_token", "noAnything");
+        data.put("user", user);
+        map.put("status", "0");
+        map.put("data", data);                           //将data放入map
+        statusInfo.setMessage("成功");
+        map.put("statusInfo", statusInfo.getMessage());
+        return map;            //返回map
     }
 }
