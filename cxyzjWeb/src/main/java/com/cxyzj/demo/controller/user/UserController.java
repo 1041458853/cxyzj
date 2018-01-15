@@ -14,7 +14,7 @@ import java.util.Map;
  */
 
 @RestController
-@RequestMapping("/v1.0/front/users")
+@RequestMapping("/v1.0/back/users")
 public class UserController {
 
     @Autowired

@@ -1,23 +1,19 @@
 package com.cxyzj.demo.domain.homePage;
 
+
 /**
- *张为毅
+ * @author 夏庆涛
  */
+
 public class Board {
-    private int board_id;//版块表主键
-    private String img_url;//版块图片路径
-    private String board_url;//版块链接
-    private String seq;//板块次序
 
-    public Board(int board_id,String img_url,String board_url,String seq){
-        this.board_id=board_id;
-        this.img_url=img_url;
-        this.board_url=board_url;
-        this.seq=seq;
-
-    }
+    private int board_id;  //版块id
+    private String img_url;  //版块图片路径
+    private String board_url;  //版块链接
+    private int seq;  //版块次序
 
     public Board(){
+
     }
 
     public int getBoard_id() {
@@ -39,31 +35,26 @@ public class Board {
     public String getBoard_url() {
         return board_url;
     }
+
     public void setBoard_url(String board_url) {
         this.board_url = board_url;
     }
 
-    public String getSeq() {
+    public int getSeq() {
         return seq;
     }
-    public void setSeq(String seq) {
+
+    public void setSeq(int seq) {
         this.seq = seq;
     }
 
     @Override
     public String toString(){
-        return "Board{"+
+        return "board{"+
                 "board_id="+board_id+
                 ",mg_url="+img_url+
                 ",board_url="+board_url+
                 ",seq="+seq+
                 '}';
     }
-
-
-
-
-
-
-
 }
